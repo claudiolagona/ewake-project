@@ -1,0 +1,9 @@
+import "../css/style.scss";
+import "../css/servizi.scss";
+import "../css/strategy.scss";
+import "./slideCards.js";
+import "./toggleDarkMode.js";
+import "./toggleMenu.js";
+import "./greenMenu.js";
+import "./blackMenu.js";
+import "./hoverCards.js";

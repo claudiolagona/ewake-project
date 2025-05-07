@@ -11,7 +11,11 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+    servizi: "./src/js/servizi.js",
+    strategy: "./src/js/strategy.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
@@ -22,7 +26,20 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "./index.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./servizi.html",
+      filename: "servizi.html",
+      chunks: ["servizi"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./strategy.html",
+      filename: "strategy.html",
+      chunks: ["strategy"],
     }),
 
     // Add your plugins here

@@ -3,6 +3,7 @@ const nav = document.querySelector("nav");
 const hamburgerSpan = document.querySelectorAll(".remove");
 const menuText = document.querySelector(".menu-text");
 const body = document.querySelector("body");
+const darkModeButton = document.querySelector(".dark-mode");
 
 const toggleMenu = () => {
   if (menuButton.classList.contains("close")) {
@@ -12,8 +13,9 @@ const toggleMenu = () => {
       span.style.display = "none";
     });
     menuText.textContent = "Chiudi";
-    nav.style.display = "flex";
+    nav.classList.add("open");
     body.style.overflow = "hidden";
+    darkModeButton.style.opacity = "0";
   } else {
     menuButton.classList.remove("open");
     menuButton.classList.add("close");
@@ -21,8 +23,9 @@ const toggleMenu = () => {
       span.style.display = "inline";
     });
     menuText.textContent = "Menù";
-    nav.style.display = "none";
+    nav.classList.remove("open");
     body.style.overflow = "auto";
+    darkModeButton.style.opacity = "1";
   }
 };
 

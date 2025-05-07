@@ -2,3 +2,8 @@ import "./css/style.scss";
 import "./js/toggleMenu.js";
 import "./js/greenMenu.js";
 import "./js/blackMenu.js";
+import "./js/playVideo.js";
+import "./js/slideCards.js";
+import "./js/toggleDescription.js";
+import "./js/toggleDarkMode.js";
+import "./js/firstScroll.js";

@@ -2,13 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>EWAKE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | EWAKE</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=light_mode"
+    />
   </head>
   <body>
     <header>
       <div class="header-wrapper">
         <div class="logo">
-          <img src="./src/assets/logo.svg" alt="EWAKE Agency" />
+          <a href="/">
+            <img src="./src/assets/logo.svg" alt="EWAKE Agency" />
+          </a>
         </div>
         <div class="toggles">
           <div class="menu-button close">
@@ -19,20 +26,21 @@
             </div>
             <span class="menu-text">Menù</span>
           </div>
-          <div class="dark-mode">
+          <div class="dark-mode dark">
             <span>
               <img src="./src/assets/dark-mode.png" alt="Dark mode logo" />
             </span>
+            <span class="material-symbols-outlined"> light_mode </span>
           </div>
         </div>
       </div>
       <nav>
         <ul>
-          <li>Progetti</li>
-          <li>Servizi</li>
-          <li>Chi siamo</li>
-          <li>Entra nel team</li>
-          <li>Contatti</li>
+          <li><a href="/">Progetti</a></li>
+          <li><a href="./servizi.html">Servizi</a></li>
+          <li><a href="/">Chi siamo</a></li>
+          <li><a href="/">Entra nel team</a></li>
+          <li><a href="/">Contatti</a></li>
         </ul>
         <div class="nav-text">
           <div class="nav-text-wrapper">
@@ -57,22 +65,22 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="title-wrapper">
-        <h1>
+    <main id="smooth-content">
+      <section class="title-wrapper box">
+        <h1 class="heading">
           Siamo una <b>Fabbrica di Creatività Digitale</b>
           <span><i>indipendente</i></span> nata e cresciuta nell’area
           industriale di Verona.
         </h1>
       </section>
-      <section class="video-section">
+      <section class="video-section box">
         <div class="video-wrapper">
           <video muted autoplay>
             <source src="./src/assets/EWAKE-home.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
-      <section class="claim-section">
+      <section class="claim-section box">
         <div class="claim-wrapper">
           <h2>&nbsp;SVEGLIA, PENSA, CREA.</h2>
           <h2>&nbsp;SVEGLIA, PENSA, CREA.</h2>
@@ -80,7 +88,7 @@
         </div>
         <hr />
       </section>
-      <section class="section-x-years">
+      <section class="section-x-years box">
         <div class="x-years-wrapper">
           <div class="x-years left">
             <p>10</p>
@@ -111,23 +119,23 @@
         </div>
         <hr />
       </section>
-      <section class="section-projects">
+      <section class="section-projects box">
         <h2>PROGETTI SELEZIONATI</h2>
-        <div class="projects-container">
-          <div class="projects-wrapper">
-            <div class="project-card boschetti">
+        <div class="projects-container swiper">
+          <div class="projects-wrapper swiper-wrapper">
+            <div class="project-card swiper-slide boschetti">
               <div class="project-card-cover"></div>
               <hr />
               <h3>Boschetti</h3>
               <p>BRAND IMAGE / LABEL DESIGN / WEBSITE</p>
             </div>
-            <div class="project-card askoll">
+            <div class="project-card swiper-slide askoll">
               <div class="project-card-cover"></div>
               <hr />
               <h3>Askoll</h3>
               <p>BRAND IMAGE / LABEL DESIGN / WEBSITE</p>
             </div>
-            <div class="project-card infermentum">
+            <div class="project-card swiper-slide infermentum">
               <div class="project-card-cover"></div>
               <hr />
               <h3>Infermentum</h3>
@@ -138,7 +146,7 @@
         <a href="/" class="all-projects">Vedi tutti i progetti</a>
         <hr />
       </section>
-      <section class="section-sector">
+      <section class="section-sector box">
         <h2>SETTORI DI COMPETENZA</h2>
         <div class="sector-wrapper">
           <div class="sector-titles">
@@ -166,7 +174,7 @@
               contesto e ne definiamo i messaggi chiave, l'identità visiva e
               verbale portandola a parlare con i proprio clienti nei contesti
               dove verrà ascoltata.
-              <span>
+              <span class="hided">
                 Analizziamo la domanda di mercato, la concorrenza e i principali
                 segmenti di mercato. Collochiamo l'azienda all'interno di un
                 contesto e ne definiamo i messaggi chiave, l'identità visiva e
@@ -180,7 +188,7 @@
         </div>
         <hr />
       </section>
-      <section class="section-about-us">
+      <section class="section-about-us box">
         <div class="about-us-wrapper">
           <div class="about-us-text">
             <h2>SIAMO FATTI COSÌ</h2>
@@ -216,7 +224,7 @@
         </div>
         <hr />
       </section>
-      <section class="section-clients">
+      <section class="section-clients box">
         <h2>CREDONO IN NOI</h2>
         <div class="clients-container">
           <div class="clients-wrapper">
@@ -267,12 +275,101 @@
             <img src="./src/assets/zuegg.png" alt="Zuegg logo" class="client" />
             <img src="./src/assets/sqdo.png" alt="Sqdo logo" class="client" />
           </div>
+          <div class="clients-wrapper">
+            <img
+              src="./src/assets/barilla.png"
+              alt="Barilla logo"
+              class="client"
+            />
+            <img
+              src="./src/assets/granCereale.png"
+              alt="Gran Cereale logo"
+              class="client"
+            />
+            <img
+              src="./src/assets/voiello.png"
+              alt="Voiello logo"
+              class="client"
+            />
+            <img
+              src="./src/assets/pfanner.png"
+              alt="Pfanner logo"
+              class="client"
+            />
+            <img src="./src/assets/zuegg.png" alt="Zuegg logo" class="client" />
+            <img src="./src/assets/sqdo.png" alt="Sqdo logo" class="client" />
+          </div>
         </div>
         <hr />
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="section-certifications box">
+        <div class="certifications-container">
+          <div class="certifications-title">
+            <h2>CERTIFICAZIONI</h2>
+            <h3>Le nostre partnership</h3>
+            <p>
+              Siamo partner di alcuni tra i più importanti player del settore,
+              per offrirti sempre la massima competenza.
+            </p>
+          </div>
+          <div class="certifications-wrapper">
+            <img
+              src="./src/assets/google.png"
+              alt="Google Partner Certification"
+              class="certification"
+            />
+            <img
+              src="./src/assets/skymedia.png"
+              alt="Sky Media Certification"
+              class="certification"
+            />
+            <img
+              src="./src/assets/cookiebot.png"
+              alt="Cookiebot Certification"
+              class="certification"
+            />
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section class="section-services box">
+        <div class="services-title">
+          <h2>I NOSTRI SERVIZI</h2>
+          <h3>
+            Diamo <i>nuova carica</i> a progetti di
+            <span>comunicazione digitale</span>.
+          </h3>
+          <a href="/" class="button">Scopri i servizi</a>
+        </div>
+        <div class="services-container">
+          <div class="services-wrapper">
+            <img
+              src="./src/assets/curve.svg"
+              alt="Curve Servizi"
+              class="curve"
+            />
+            <div class="services">
+              <h2>CI OCCUPIAMO DI</h2>
+              <p class="service">Strategy & Innovation</p>
+              <p class="service">Branding</p>
+              <p class="service">Creativity & Design</p>
+              <p class="service">Mindset & Experience</p>
+              <p class="service">Performance optimization</p>
+              <p class="service">Advertising</p>
+              <p class="service">Digital Experience</p>
+              <p class="service">Social media management</p>
+              <p class="service">Creators</p>
+              <p class="service">Website & Apps</p>
+              <p class="service">Production</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contacts box">
+        <div class="background"></div>
+        <h2>Vogliamo <b>iniziare?</b></h2>
+        <a href="/" class="button">Contattaci</a>
+      </section>
     </main>
     <footer>
       <div class="footer-wrapper">

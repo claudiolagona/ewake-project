@@ -1,0 +1,595 @@
+$black: #000000;
+$white: #f7f7f7;
+$white2: #ffffff;
+$green: #5aef74;
+$violet: #9747ff;
+$red: #ff3b4a;
+$grey: #3e3d3d;
+$grey2: #a1a1a1;
+$grey3: #545454;
+
+body {
+  main {
+    section.section-hero {
+      width: 100%;
+      background: url("../assets/rainbow-logo.png") no-repeat right bottom;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10%;
+
+      h1 {
+        font-size: 108px;
+        font-family: "Playfair Display";
+        font-style: italic;
+        width: 60%;
+        font-weight: 400;
+      }
+    }
+
+    section.section-brand {
+      width: 85%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 150px 0;
+
+      .brand-art {
+        width: 35%;
+      }
+
+      .brand-text {
+        width: 36%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 34px;
+        }
+      }
+    }
+
+    section.section-sectors {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 0 150px;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin-left: 7.5%;
+        margin-bottom: 30px;
+      }
+
+      .sectors-wrapper {
+        width: 100%;
+        border-top: 1px solid $white2;
+
+        h3.sector {
+          padding: 30px 0 30px 7.5%;
+          font-size: 76px;
+          font-weight: 400;
+          border-bottom: 1px solid $white;
+
+          a {
+            color: $white2;
+            text-decoration: none;
+          }
+        }
+
+        h3.selected {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+
+          &::before {
+            content: "";
+            background: url("../assets/arrow.png") no-repeat;
+            width: 43px;
+            height: 30px;
+            display: block;
+            margin-left: -63px;
+          }
+        }
+      }
+    }
+
+    section.section-lab-e {
+      width: 85%;
+      padding: 50px 0 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .lab-e-text {
+        width: 53%;
+
+        h2 {
+          font-size: 22px;
+          font-weight: 400;
+        }
+
+        h3 {
+          font-family: "Playfair Display";
+          font-size: 108px;
+          font-style: italic;
+          font-weight: 400;
+          margin-bottom: 100px;
+        }
+
+        p {
+          font-size: 52px;
+        }
+      }
+
+      .lab-e-pattern {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    section.section-working-model {
+      width: 85%;
+      padding: 50px 0 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      .working-model-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .working-model {
+          width: 45%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 30px;
+
+          img {
+            width: 146px;
+          }
+
+          .model-text {
+            width: 70%;
+
+            h2 {
+              font-size: 34px;
+              font-weight: 400;
+              margin-bottom: 30px;
+            }
+
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    section.section-certifications {
+      hr {
+        display: none;
+      }
+    }
+
+    section.section-communication-experts {
+      width: 85%;
+      padding: 50px 0 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10%;
+
+      img {
+        width: 555px;
+      }
+
+      .communication-text {
+        width: 50%;
+
+        h2 {
+          font-size: 60px;
+          font-weight: 400;
+          margin-bottom: 50px;
+        }
+
+        p {
+          font-size: 24px;
+          margin-bottom: 100px;
+        }
+
+        a.button {
+          text-align: center;
+          display: block;
+          width: 274px;
+          font-size: 28px;
+          background-color: $grey;
+          border-radius: 48.5px;
+          color: $white2;
+          text-decoration: none;
+          padding: 10px 0;
+        }
+      }
+    }
+
+    section.section-contacts {
+      h2 {
+        width: 70%;
+
+        i {
+          font-family: "Playfair Display";
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    main {
+      section.section-hero {
+        h1 {
+          font-size: 92px;
+          width: 70%;
+        }
+      }
+
+      section.section-brand {
+        .brand-text {
+          width: 42%;
+        }
+      }
+
+      section.section-lab-e {
+        .lab-e-text {
+          width: 68%;
+        }
+      }
+
+      section.section-working-model {
+        .working-model-wrapper {
+          .working-model {
+            width: 48%;
+
+            .model-text {
+              h2 {
+                font-size: 28px;
+              }
+
+              p {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      section.section-communication-experts {
+        .communication-text {
+          h2 {
+            font-size: 48px;
+          }
+        }
+      }
+
+      section.section-contacts {
+        h2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    main {
+      section.section-hero {
+        background-size: 70%;
+
+        h1 {
+          font-size: 78px;
+          width: 69%;
+        }
+      }
+
+      section.section-brand {
+        .brand-art {
+          width: 40%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .brand-text {
+        }
+      }
+
+      section.section-sectors {
+        .sectors-wrapper {
+          h3.sector {
+            font-size: 62px;
+          }
+        }
+      }
+
+      section.section-lab-e {
+        padding-top: 0;
+
+        .lab-e-text {
+          h3 {
+            font-size: 86px;
+            margin-bottom: 50px;
+          }
+
+          p {
+            font-size: 42px;
+          }
+        }
+      }
+
+      section.section-working-model {
+        .working-model-wrapper {
+          .working-model {
+            width: 49%;
+
+            img {
+              width: 25%;
+            }
+
+            .model-text {
+              width: 72%;
+
+              h2 {
+                margin-bottom: 20px;
+                font-size: 22px;
+              }
+
+              p {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      section.section-communication-experts {
+        img.communication {
+          width: 45%;
+        }
+
+        .communication-text {
+          h2 {
+            font-size: 42px;
+          }
+
+          p {
+            font-size: 22px;
+          }
+
+          a.button {
+            font-size: 22px;
+            width: 250px;
+          }
+        }
+      }
+
+      section.section-contacts {
+        padding: 200px 7.5% !important;
+
+        h2 {
+          font-size: 72px !important;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    main {
+      section.section-hero {
+        height: 40vh;
+
+        h1 {
+          font-size: 68px;
+          width: 72%;
+        }
+      }
+
+      section.section-brand {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+
+        .brand-art {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .brand-text {
+          width: 70%;
+        }
+      }
+
+      section.section-sectors {
+        .sectors-wrapper {
+          h3.sector {
+            font-size: 50px;
+          }
+        }
+      }
+
+      section.section-lab-e {
+        padding-bottom: 50px;
+
+        .lab-e-text {
+          h3 {
+            font-size: 72px;
+          }
+        }
+
+        .lab-e-pattern {
+          height: 500px;
+        }
+      }
+
+      section.section-working-model {
+        padding-bottom: 50px;
+
+        .working-model-wrapper {
+          flex-direction: column;
+          align-items: center;
+          gap: 50px;
+
+          .working-model {
+            width: 100%;
+
+            img {
+              width: 30%;
+            }
+
+            .model-text {
+              width: 70%;
+            }
+          }
+
+          :nth-child(even) {
+            img {
+              order: 1;
+            }
+          }
+        }
+      }
+
+      section.section-communication-experts {
+        .communication-text {
+          h2 {
+            font-size: 36px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      section.section-contacts {
+        h2 {
+          font-size: 50px !important;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    main {
+      section.section-hero {
+        h1 {
+          font-size: 50px;
+          width: 69%;
+        }
+      }
+
+      section.section-sectors {
+        .sectors-wrapper {
+          h3.selected {
+            &::before {
+              width: 21.5px;
+              height: 15px;
+              margin-left: -41px;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      section.section-communication-experts {
+        padding-bottom: 150px;
+
+        .communication-text {
+          h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+          }
+
+          p {
+            margin-bottom: 30px;
+            font-size: 16px;
+          }
+
+          a.button {
+            font-size: 18px;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    main {
+      section.section-brand {
+        .brand-text {
+          width: 90%;
+        }
+      }
+
+      section.section-lab-e {
+        .lab-e-text {
+          h3 {
+            font-size: 45px;
+          }
+
+          p {
+            font-size: 32px;
+          }
+        }
+      }
+
+      section.section-communication-experts {
+        flex-direction: column;
+        gap: 50px;
+
+        .communication-text {
+          width: 100%;
+        }
+      }
+
+      section.section-contacts {
+        h2 {
+          font-size: 36px !important;
+        }
+      }
+    }
+  }
+}
