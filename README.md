@@ -32,9 +32,9 @@
    cd eWAKE-Project
 
 2. Installare le dipendenze:
-  ```bash
+     ```bash
      npm install
-  ```
+     ```
 
 3. Avvio del progetto:
   - Ambiente di sviluppo:
