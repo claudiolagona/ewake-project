@@ -33,7 +33,7 @@
 
 2. Installare le dipendenze:
   ```bash
-  npm install
+     npm install
   ```
 
 3. Avvio del progetto:
@@ -42,11 +42,11 @@
     npm run dev
     ```
   - Build di sviluppo:
-  ```bash
-  npm run build:dev
-  ```
+     ```bash
+     npm run build:dev
+     ```
   - Build di produzione:
-  ```bash
-  npm run build
-  ```
+     ```bash
+     npm run build
+     ```
   
